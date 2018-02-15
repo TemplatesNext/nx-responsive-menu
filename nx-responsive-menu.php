@@ -3,7 +3,7 @@
 Plugin Name: Nx Responsive Menu
 Plugin URI: http://templatesnext.org/
 Description: Nx Responsive menu is a mobile menu plugin.
-Version: 1.0.2
+Version: 1.0.3
 Author: TemplatesNext
 Author URI: http://templatesnext.org/
 License: GPLv2 or later

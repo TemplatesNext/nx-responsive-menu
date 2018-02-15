@@ -3,7 +3,7 @@ Contributors: marsian
 Tags: Wordpress Responsive Menu, Mobile Menu, Responsive Menu Plugin, WP Responsive Menu, Wordpress mobile menu
 Requires at least: 3.0
 Tested up to: 4.7.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ NX Responsive Menu turns your WordPress menu to a highly customizable sliding re
 
 == Description ==
 
-WordPress Responsive Menu plugin will help you to get a cool, highly customizable mobile menu plugin. Using this plugin you can easily convert your wordpress menu to a great, elegant looking sliding menu for all mobile devices.
+WordPress Responsive Menu plugin will help you to get a cool, highly customizable mobile menu plugin.
 
 = Features: =
 * Fully responsive and works on all type of mobile devices. 
@@ -22,26 +22,13 @@ WordPress Responsive Menu plugin will help you to get a cool, highly customizabl
 * Option to open menu from top, left and right.
 * Easily add your website logo the the menu.
 * Easily hide unwanted elements on mobile devices.
-* Supports swipe gestures.
-* Enable/Disable pinch to zoom feature.
-* Works perfectly on all devices/platforms.
-* Add a custom search bar to your menu.
-* Ability to change the search bar text.
 
-This plugin works out of box with any theme frameworks like genesis or thesis and it also works fine with multisite setups.
+
+This plugin works out of box with any theme frameworks.
 
 = Important Notes =
-If you are looking for more options then [check out the pro version](http://magnigenie.com/wp-responsive-menu-pro/) of the plugin.
-
 This plugin is based on  [sidr jquery menu plugin](https://github.com/artberri/sidr).
 
-For Quick support please check WP Responsive menu [Support forum](http://magnigenie.com/support/queries/wp-responsive-menu/).
-
-If you have any  suggestions for a new plugin, feel free to email me at sagar@magnigenie.com.
-
-For support you can directly email us on support@magnigenie.com
-
-Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin-wordpress/)
 
 == Installation ==
 
@@ -54,9 +41,6 @@ Check out [the demo](http://magnigenie.com/wp-responsive-menu-mobile-menu-plugin
 
 == ChangeLog ==
 
-= Version 2.0.7 =
+= Version 1.0.2 =
 
-* Fixed conflict custom post type and contact form 7 menu.
-* Added option to change the search box placeholder text.
-* Tested with WordPress 4.4 and added support for it.
-
+* Fixed padding issue in firefox causing extra vertical scroll.
