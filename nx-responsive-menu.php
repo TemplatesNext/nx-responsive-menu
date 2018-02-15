@@ -3,7 +3,7 @@
 Plugin Name: Nx Responsive Menu
 Plugin URI: http://templatesnext.org/
 Description: Nx Responsive menu is a mobile menu plugin.
-Version: 1.0.1
+Version: 1.0.2
 Author: TemplatesNext
 Author URI: http://templatesnext.org/
 License: GPLv2 or later
@@ -40,7 +40,7 @@ function nxrmenu_enqueue_scripts() {
 	wp_localize_script( 'nxrmenu.js', 'nxrmenu', $wpr_options );
 }
 
-function wpr_search_form() {
+function nxwpr_search_form() {
 	$options = get_option('nxrmenu_options');
 	return '<form role="search" method="get" class="wpr-search-form" action="' . site_url() . '"><label><input type="search" class="wpr-search-field" placeholder="' . $options['search_box_text'] . '" value="" name="s" title="Search for:"></label></form>';
 }
@@ -51,21 +51,23 @@ function nxrmenu_menu() {
 	if($options['enabled']) :
 		?>
 		<div id="nxrmenu_bar" class="nxrmenu_bar">
-			<div class="nxrmenu_icon">
-				<span class="nxrmenu_ic_1"></span>
-				<span class="nxrmenu_ic_2"></span>
-				<span class="nxrmenu_ic_3"></span>
-			</div>
-			<div class="menu_title">
-				<?php echo $options['bar_title'] ?>
-				<?php if($options['bar_logo']) echo '<img class="bar_logo" src="'.$options['bar_logo'].'"/>' ?>
-			</div>
+        	<div class="nxrmenu-inner">
+                <div class="nxrmenu_icon">
+                    <span class="nxrmenu_ic_1"></span>
+                    <span class="nxrmenu_ic_2"></span>
+                    <span class="nxrmenu_ic_3"></span>
+                </div>
+                <div class="menu_title">
+                    <?php echo $options['bar_title'] ?>
+                    <?php if($options['bar_logo']) echo '<img class="bar_logo" src="'.$options['bar_logo'].'"/>' ?>
+                </div>
+            </div>
 		</div>
 
 		<div id="nxrmenu_menu" class="nxrmenu_levels <?php echo $options['position'] ?> nxrmenu_custom_icons">
 			<?php if( $options['search_box'] == 'above_menu' ) { ?> 
 			<div class="wpr_search">
-				<?php echo wpr_search_form(); ?>
+				<?php echo nxwpr_search_form(); ?>
 			</div>
 			<?php } ?>
 			<ul id="nxrmenu_menu_ul">
@@ -82,7 +84,7 @@ function nxrmenu_menu() {
 			</ul>
 			<?php if( $options['search_box'] == 'below_menu' ) { ?> 
 			<div class="wpr_search">
-				<?php echo wpr_search_form(); ?>
+				<?php echo nxwpr_search_form(); ?>
 			</div>
 			<?php } ?>
 		</div>
